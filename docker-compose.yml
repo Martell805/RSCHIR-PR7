@@ -5,8 +5,8 @@ services:
     container_name: db6
     environment:
       - POSTGRES_DB=db
-      - POSTGRES_USER=vanyapro
-      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
     ports:
       - '5432:5432'
 
@@ -26,5 +26,5 @@ services:
       - db
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db6:5432/db
-      - SPRING_DATASOURCE_USERNAME=vanyapro
-      - SPRING_DATASOURCE_PASSWORD=mypassword
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
